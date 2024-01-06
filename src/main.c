@@ -3,6 +3,7 @@
 
 #include "ordering/heap_sort.h"
 #include "ordering/insert_sort.h"
+#include "ordering/shell_sort.h"
 
 void print_arr(int *arr, size_t len);
 
@@ -21,6 +22,11 @@ int main(void) {
     memcpy(arr, safe, len * sizeof(*safe));
     printf("insert: \n");
     insert_sort(arr, len);
+    print_arr(arr, len);
+
+    memcpy(arr, safe, len * sizeof(*safe));
+    printf("shell: \n");
+    shell_sort(arr, len);
     print_arr(arr, len);
 }
 
