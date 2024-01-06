@@ -8,7 +8,7 @@ void heap_sort(int *arr, size_t len) {
     }
 
     // establish heap
-    for (int i = len / 2; i < len; --i) {
+    for (size_t i = len / 2; i < len; --i) {
         shift(arr, len, i);
     }
 
