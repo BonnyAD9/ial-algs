@@ -1,6 +1,7 @@
 #include "str.h"
 
 #include <string.h>
+#include <stdlib.h>
 
 bool str_eq(Str a, Str b) {
     if (a.len != b.len) {

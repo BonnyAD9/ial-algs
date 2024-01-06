@@ -97,4 +97,5 @@ int *tb_set(TBrent *tb, Str key, int value) {
     }
 
     // TODO
+    return NULL;
 }
