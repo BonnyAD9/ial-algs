@@ -118,7 +118,7 @@ void test_sort(
     char *name
 ) {
     printf("%s\n", name);
-    for (size_t size = 1; size < len; size *= 10) {
+    for (size_t size = 1; size <= len; size *= 10) {
         memcpy(arr, safe, size * sizeof(*safe));
         printf("  %zu: ", size);
         fflush(stdout);
